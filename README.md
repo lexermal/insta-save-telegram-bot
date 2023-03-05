@@ -1,42 +1,28 @@
 ﻿# insta-save-telegram-bot based on [aiogram](https://aiogram.dev/) and [instaloader](https://github.com/instaloader/instaloader)  
 
-## telegram bot can be tested [here](https://t.me/igsavetgbot)
+
+This fork includes my experience working with that project, I did not manage to try it out past the login process
+
 ---
 
-# Installation
-1. Clone this repo: 
-`git clone https://github.com/kyemets/insta-save-telegram-bot.git`
+## Installation
+```
+git clone https://github.com/kyemets/insta-save-telegram-bot.git
+pip install -r requirements.txt
+pip install keyboard
+```
 
-2. Install Aiogram
+## Run it
+```python3 bot.py```
 
-# Aiogram
-## Using PIP
-> `$ pip install -U aiogram`
-
-## Using Pipenv
-> `$ pipenv install aiogram`
-
-## Using Pacman
-_aiogram_ is also available in Arch Linux Repository, so you can install this framework on any Arch-based distribution like Arch Linux, Antergos, Manjaro, etc. To do this, just use pacman to install the [python-aiogram](https://archlinux.org/packages/community/any/python-aiogram/) package:
-
-> `$ pacman -S python-aiogram`
-
-# Instaloader
-## Install
-> `$ pip3 install instaloader`
-
-
-# Local launch
-
-1. Install dependencies with `requirements.txt`
-2. Run `python bot.py`
-
-# Environment variables
+## Environment variables
 - `TOKEN` — Telegram bot token 
 - `USERNAME` — Instagram username account 
 - `PASSWORD` — Instagram password account
 
 ## P.S. ⚠️ The bot does not work with closed instagram profiles ⚠️ 
 
-# License
-MIT — use for any purpose.
+## Todo
+* Docker container
+* ENV variables do not get set in script when set in bash
+* 2F login does not work, it's always saying code is invalid
